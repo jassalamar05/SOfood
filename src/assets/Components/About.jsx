@@ -177,10 +177,10 @@ export default function AboutUs(){
                 </div>
 
 
-                <div className="grid grid-cols-3 mt-20 h-[400px] gap-8 px-32">
+                <div className="grid grid-cols-3 mt-20 h-[400px] gap-8 px-32 ">
                     <div className="  shadow-xl">
                         <div className="bg-[url(public/Images/c.avif)] bg-cover h-[300px]"></div>
-                        <div className="text-center pt-5">
+                        <div className="text-center pt-5 hover:scale-105">
                             <p className="text-orange-500 text-3xl font-bold">Mr.Benny John</p>
                             <p className="text-gray-500 text-lg pt-5">Traditional Chef</p>
 
@@ -199,7 +199,7 @@ export default function AboutUs(){
 
                             {/* LinkedIn */}
                             <div className="w-7 h-7 rounded-full border-2 border-orange-500 flex items-center justify-center text-orange-500 hover:bg-orange-500 hover:text-white transition">
-                                <FaLinkedinIn size={10} />
+                                <FaLinkedinIn size={10}  />
                             </div>
                             </div>
                             </p>
@@ -208,7 +208,7 @@ export default function AboutUs(){
                   
                     <div className=" shadow-xl">
                         <div className="bg-[url(public/Images/c2.jpg)] bg-cover h-[300px]"></div>
-                        <div className="text-center pt-5">
+                        <div className="text-center pt-5 hover:scale-105">
                             <p className="text-orange-500 text-3xl font-bold">Mr.Chand Siyap</p>
                             <p className="text-gray-500 text-lg pt-5">Traditional Chef</p>
 
@@ -236,7 +236,7 @@ export default function AboutUs(){
 
                       <div className=" shadow-xl">
                         <div className="bg-[url(public/Images/c3.jpg)] bg-cover h-[300px]"></div>
-                        <div className="text-center pt-5">
+                        <div className="text-center pt-5 hover:scale-105">
                             <p className="text-orange-500 text-3xl font-bold">Mr.David Orja</p>
                             <p className="text-gray-500 text-lg pt-5">Traditional Chef</p>
                             <p>

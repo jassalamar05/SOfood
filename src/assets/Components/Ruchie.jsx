@@ -317,7 +317,7 @@ export default function Rav(){
 
 
 
-    <div className="grid grid-cols-3 px-[270px] mt-20">
+    <div className="grid grid-cols-3 px-[270px] mt-10 gap-10">
         <div>
             <div className="bg-[url(public/Images/famous-indian-food-dishes-that-are-delicious-and-must-try-for-tourists.jpg)] bg-cover rounded-md  h-[200px] w-80"></div>
         </div>
@@ -512,54 +512,6 @@ export default function Rav(){
 
 
 
-
-
-
-
-
-
-
-{/* <div>
-    <div className="flex justify-center mt-5">
-         <div className="bg-orange-500 h-1 w-8"></div>
-    </div>
-        <div className="text-center mt-2">OUR TESTIMONIAL</div>
-
-        <p className="text-5xl font-bold text-center mt-6">Exploring <span className="text-orange-500"> Ruchi's</span> Kitchen Treasures</p>
-    </div>
-        
-    <div className="grid grid-cols-2 px-20 gap-10 mt-16">
-        <div className="bg-orange-600 h-52 p-5 rounded">
-            <p className="text-white ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat 
-                 adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel
-                  in aut? Iure?</p>
-
-                <div className="flex justify-between">
-                    <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className="bg-[url(public/Images/star2.png)] bg-contain h-10 w-32 mt-10"></p>
-                </div>
-            </div>
-   <div className="bg-white h-52 p-5 rounded shadow-2xl shadow-black">
-            <p className="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat 
-                 adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel
-                  in aut? Iure?</p>
-
-                <div className="flex justify-between ">
-                    <p className="text-white text-xl mt-10 ">Michelle</p>
-                    <p className="bg-[url(public/Images/star2.png)] bg-contain h-10 w-32 mt-10"></p>
-                </div>
-            </div>
-    </div> */}
-
-    {/* <div className="flex items-center justify-center mt-10 gap-5 mb-10 ">
-        <button className="bg-orange-500 h-4 w-4 rounded-full"></button>
-        <button className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>
-        <button className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>  
-    </div> */}
-
-
 <section className="py-20 bg-white px-32">
       {/* Heading */}
       <div className="text-center mb-12">
@@ -739,20 +691,28 @@ export default function Rav(){
        <div className="flex items-center gap-6 pt-6">
        {/* Facebook */}
         <div className="w-10 h-10 rounded-full border-2 flex items-center justify-center bg-white text-orange-600 ">
+          <a href="https://www.youtube.com/">
        <FaYoutube size={16} />
+       </a>
          </div>
       <div className="w-10 h-10 rounded-full border-2 flex items-center justify-center ">
+        <a href="https://www.facebook.com/">
         <FaFacebookF size={16} />
+           </a>
          </div>
-           
+        
         {/* Instagram */}
          <div className="w-10 h-10 rounded-full border-2  flex items-center justify-center">
+          <a href="https://www.instagram.com/">
         <FaInstagram size={16} />
+        </a>
          </div>
            
             {/* LinkedIn */}
            <div className="w-10 h-10 rounded-full border-2  flex items-center justify-center ">
+            <a href="https://in.linkedin.com/?mcid=6844056167778418689&src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418467_crid.657403558727_kw.how%20to%20make%20profile%20on%20linkedin_d.c_tid.kwd-3500001_n.g_mt.e_geo.1007800&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=14650114788&gclid=Cj0KCQiAgP_JBhD-ARIsANpEMxwSGNFQpt5c-EwSmaPkAFa7WIjzAbOj6-cZd97sGp-xTICTfqd0Q3caAgWREALw_wcB">
            <FaLinkedinIn size={16} />
+           </a>
            </div>
          </div>
     </div>
