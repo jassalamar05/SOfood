@@ -1,4 +1,5 @@
 import { CalendarDays, MessageSquare } from "lucide-react";
+import { useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -7,7 +8,150 @@ import { Link } from "react-router-dom";
 
 
 
-export default function R(){
+
+export default function Rav(){
+      const slider=[
+    {
+      id: 1,
+      text:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel in aut? Iure?",
+      name: "Ismail",
+      bg: "bg-orange-600",
+      textColor: "text-white",
+      shadow: true,
+      Img: "public/Images/star2.png",
+    },
+    {
+      id: 2,
+      text:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel in aut? Iure?",
+      name: "Khan",
+      bg: "bg-white",
+      textColor: "text-black",
+      shadow: true,
+      Img: "public/Images/star2.png",
+    },
+     {
+      id: 3,
+      text:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel in aut? Iure?",
+      name: "Punnet",
+      bg: "bg-white",
+      textColor: "text-black",
+      shadow: true,
+      Img: "public/Images/star2.png",
+    },
+      {
+      id: 4,
+      text:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, atque dicta eius repellat, optio doloribus ipsa modi voluptate corrupti minima enim quaerat adipisci itaque velit sint vel, soluta quam porro mollitia explicabo magnam. Ipsam veritatis enim vel in aut? Iure?",
+      name: "David",
+      bg: "bg-orange-600",
+      textColor: "text-white",
+      shadow: true,
+      Img: "public/Images/star2.png",
+    },
+  ];
+  
+  const[data,setData]=useState(0);
+  
+  const next=()=>{
+      if(data+2<slider.length){
+          setData(data+2)
+      }
+  }
+  
+  const prev=()=>{
+      if(data>0){
+          setData(data-2)
+      }
+  }
+
+
+
+
+
+  // cards
+
+
+  const menuData = [
+  {
+    id: 1,
+    name: "Burger",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image:"public/Images/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp",
+    category: "Snacks",
+  },
+  {
+    id: 2,
+    name: "Chicken Seekh Kabab",
+    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos a nobis ut quas inventore ullam maiores, quod nisi ducimus quisquam officiis necessitatibus exercitationem consectetur vitae voluptates adipisci saepe odio facere.",
+    image: "",
+    category: "Food",
+    gradient: true,
+  },
+  {
+    id: 3,
+    name: "Mix Veg",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image:"public/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp",
+    category: "Food",
+  },
+  {
+    id: 4,
+    name: "Machio",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image:"public/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp",
+    category: "Snacks",
+  },
+  {
+    id: 5,
+    name: "Vegetables",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image:"public/Images/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg",
+    category: "Food",
+  },
+  {
+    id: 6,
+    name: "Lenticles",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image: "public/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp",
+    category: "Food",
+  },
+  {
+    id: 7,
+    name: "Pizza",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image: "public/Images/istockphoto-104704117-612x612.jpg",
+    category: "Cart",
+  },
+  {
+    id: 8,
+    name: "Salad",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.",
+    image: "public/Images/pexels-ella-olsson-572949-1640777.jpg",
+    category: "Cart",
+  },
+];  
+
+
+      // USE STATE
+      const[datas,setDatas]=useState(menuData);
+    
+      // button di conditions banyi 
+      const showAll=()=>setDatas(menuData)
+
+      // item .category use ki hai kyoki data (array of object ki form mei hai)
+
+      // aagr data normal array ki form mei hai toh item ke sath category nai likhna (that will give you undefined)
+      const Food=()=>setDatas(menuData.filter(item=>item.category==="Food"))
+      const Cart=()=>setDatas(menuData.filter(item=>item.category==="Cart"))
+      const Snacks=()=>setDatas(menuData.filter(item=>item.category==="Snacks"))
+
+
+
+  
+  
     return(
         <>
 <div className=" bg-[url('/Images/p.jpg')] bg-cover w-screen h-[700px]">
@@ -42,7 +186,16 @@ export default function R(){
               eaque porro neque nostrum illum repellendus accusamus quasi non quibusdam nihil earum, assumenda sint exercitationem aspernatur eum officiis 
               architecto.</p>
 
-              <button className="mt-20 text-white bg-orange-600 rounded-lg h-[40px] w-[200px]">Exploring Our Menu</button>
+              {/* <button className="mt-20 text-white bg-orange-600 rounded-lg h-[40px] w-[200px]">
+                <a href="/menu"></a>
+                Exploring Our Menu</button> */}
+
+
+                <a href="#menu"
+                  className="mt-20 inline-flex items-center justify-center text-white bg-orange-600 rounded-lg h-[40px] w-[200px]" >
+                  Exploring Our Menu
+                </a>
+
     </div>
  </div>
 </div>
@@ -213,14 +366,14 @@ export default function R(){
     </div>
 
 
-
-   <div className="h-80">
+{/* card */}
+<div className="h-80">
     <div className="flex justify-center items-center mt-20">
         <div className=" bg-orange-500 h-1 w-10"></div>
     </div>
 
 
-    <div className="flex justify-center items-center mt-3">OUR MENU</div>
+    <div className="flex justify-center items-center mt-3 scroll-mt-20" id="menu">OUR MENU</div>
     <div className="flex items-center justify-center mt-5">
     <p className="text-4xl font-bold">Where Flavor <span className="text-orange-500"> Meet Innovation </span>- Your <br /> Ultimate Culinary Destination</p>
    </div>
@@ -230,95 +383,49 @@ export default function R(){
          eveniet aspernatur ipsum obcaecati alias ea hic, officia quos aliquid nam ab minus? Consequatur consequuntur exercitationem, corrupti ea alias veritatis, quo asperiores 
          </p>
    </div>
-
-
-   <div className="flex justify-center mt-8 items-center gap-10 cursor-pointer">
-    <div className="bg-orange-600 flex items-center justify-center text-sm h-7 w-20 rounded text-white">View All</div>
-    <div className=" border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Food</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Cart</div>
-    <div className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Snacks</div>
-   </div>
    </div>
 
+<section>
+  <div className="flex justify-center pb-20 items-center gap-10 cursor-pointer">
+    <button onClick={showAll} className="bg-orange-600 flex items-center justify-center text-sm h-7 w-20 rounded text-white">View All</button>
+    <button onClick={Food} className=" border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Food</button>
+    <button onClick={Cart} className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Cart</button>
+    <button onClick={Snacks} className="border-orange-500 border-[2px] flex items-center justify-center text-sm h-7 w-20 rounded text-orange-500">Snacks</button>
+   </div>
+ <div>
 
-      <div className="grid grid-cols-4 gap-4 px-36">
-            <div className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(public/Images/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp)] bg-cover h-[200px]"></div>
-                <div>
-                <p className="text-orange-400 font-bold mx-4">Burger</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
+  
+  {/* jsx likhi and mapping krti of images , name , description , title -- item, index  , unique key pass krke */}
+      <div  className="grid grid-cols-4 gap-4 px-36">
+        {datas.map((item,index)=>(
+          <div key={item.id} className="border-[2px] border-orange-500">
+
+            <div className="bg-cover h-[200px] ">
+               {item.image ? (
+                  <img
+                    src={item.image}
+                    className="h-[200px] w-full object-cover"
+                  />
+                ) : (
+                  <div className="h-[200px] w-full bg-gradient-to-t from-orange-400 to-blue-200 flex items-center justify-center">
+                    <p className="text-white font-bold text-xl text-center px-4">
+                      {item.name}
+                    </p>
+                  </div>
+                  )}
             </div>
-
-
-            <div>
-                <div className="bg-gradient-to-t from-orange-400  to-blue-300 h-[300px]">
-                    <div className=" pt-32">
-                        <p className="text-white font-bold text-2xl mx-3">Chicken Seekh Kabab</p>
-                        <p className="text-sm mx-3 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos a nobis ut quas inventore ullam maiores, quod nisi ducimus quisquam officiis necessitatibus exercitationem consectetur vitae voluptates adipisci saepe odio facere.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div  className="border-[1px] border-orange-400 h[300px]">
-                <div className="bg-[url(public/Images/tk-traditional-indian-foods-to-taste-in-2022-phpEXAXNS.webp)] bg-cover h-[200px]"></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Mix Veg</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(public/Images/b63q62p8_beetroot-veg-kofta_625x300_03_May_23.webp)] bg-cover h-[200px]"></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Machio</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(public/Images/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg)] bg-cover h-[200px]"></div>
-                  <div >
-                <p className="text-orange-400 font-bold mx-4">Vegetables</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(public/Images/18FD-VEGAN-SIDES-TG-topart-group-clkb-superJumbo.webp)] bg-cover h-[200px]"></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Lenticles</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(public/Images/istockphoto-104704117-612x612.jpg)] bg-cover h-[200px]"></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Pizza</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-
-
-            <div  className="border-[1px] border-orange-400 h-[300px]">
-                <div className="bg-[url(public/Images/pexels-ella-olsson-572949-1640777.jpg)] bg-cover h-[200px]"></div>
-                  <div>
-                <p className="text-orange-400 font-bold mx-4">Salad</p>
-                <p className="text-[10px] mx-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sit! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, error.</p>
-                </div>
-            </div>
-        </div>
+            <div className="text-orange-400 font-bold mx-4" >{item.name}</div>
+            <div className="text-[10px] mx-3 text-gray-500">{item.description}</div>
+            
+          </div>
+        ))}
+      </div>
+      </div>
+</section>
   
 
   
-          <div className="h-screen bg-orange-100 mt-20">
+  <div className="h-screen bg-orange-100 mt-20">
         <div className="grid grid-cols-5 px-40 gap-2">
         <div className="col-span-2 pl-">
 
@@ -333,7 +440,7 @@ export default function R(){
         <p className="text-5xl font-bold">Discover Why Ruchi's <br /> Kitchen Is the <br /> <span className="text-orange-500"> Preferred Culinary </span><br /> Destination</p>
         </div>
 
-        <div className="bg-[url(public/Images/chef.jpeg)] bg-cover h-[300px] mt-32 "></div>
+        <div className="bg-[url(public/Images/chef.jpeg)] bg-cover h-[250px] mt-32 "></div>
         </div>
 
 {/* right side col */}
@@ -359,7 +466,60 @@ export default function R(){
 </div>
 </div>
 
-<div>
+{/* Cards */}
+
+
+     <div className="flex justify-center mt-10">
+     <div className="bg-orange-500 h-1 w-8"></div>
+    </div>
+        <div className="text-center mt-2">OUR TESTIMONIAL</div>
+
+        <p className="text-5xl font-bold text-center mt-6">Exploring <span className="text-orange-500"> Ruchi's</span> Kitchen Treasures</p>
+
+        {/* slider */}
+
+
+
+        <div>
+              <div className="grid grid-cols-2 px-20 gap-10 mt-16">
+                {slider.slice(data,data+2).map((item)=>(
+                    <>
+                    <div className="hover:scale-105 transition duration-300">
+                    <div key={item.id}
+                    className={`${item.bg} h-52 p-5 rounded      ${item.shadow ?"shadow-2xl shadow-black":""}`}>
+                    <div className={item.textColor}>{item.text}</div>
+                    <div>{item.shadow}</div>
+
+
+                    <div className="flex justify-between items-center mx-5 mt-5">
+                     <div className="font-semibold font-mono">{item.name}</div>
+                    <img src={item.Img} className=" bg-contain h-10 w-32 " />
+                   </div>
+               </div>
+         </div>
+                 </>
+                ))}
+           
+        </div>
+        </div>
+
+    <div className="flex items-center justify-center mt-10 gap-5 mb-10 ">
+        <button onClick={prev}  className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>
+        <button className="bg-black border-2 h-4 w-4 rounded"></button>
+        <button onClick={next} className="border-orange-500 border-2 h-4 w-4 rounded-full "></button>  
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+{/* <div>
     <div className="flex justify-center mt-5">
          <div className="bg-orange-500 h-1 w-8"></div>
     </div>
@@ -391,13 +551,13 @@ export default function R(){
                     <p className="bg-[url(public/Images/star2.png)] bg-contain h-10 w-32 mt-10"></p>
                 </div>
             </div>
-    </div>
+    </div> */}
 
-    <div className="flex items-center justify-center mt-10 gap-5 mb-10 ">
+    {/* <div className="flex items-center justify-center mt-10 gap-5 mb-10 ">
         <button className="bg-orange-500 h-4 w-4 rounded-full"></button>
         <button className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>
         <button className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>  
-    </div>
+    </div> */}
 
 
 <section className="py-20 bg-white px-32">
@@ -416,7 +576,7 @@ export default function R(){
       {/* Blog Cards */}
       <div className="grid grid-cols-3 gap-8 px-4  ">
         {/* Card 1 */}
-        <div className="h-96 hover:shadow-xl transition rounded">
+        <div className="h-96 hover:shadow-xl transition rounded ">
         <div className=" rounded-lg bg-[url(public/Images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__06__20160612-melon-roundup-recipes-01-0d22b9094f1348fcaa263d64817b2f8e.jpg)] bg-cover h-60">
           <div className="pt-60">
             <h3 className="text-orange-500 font-semibold text-md mb-2 pt-4">
@@ -425,7 +585,7 @@ export default function R(){
 
             <p className="text-gray-600 text-sm mb-4">
               Explore the world of vibrant vegetarian dishes and hearty non-veg meals.
-              This blog uncovers the secrets behind traditional
+             
             </p>
 
             <div className="flex items-center justify-between text-sm text-gray-500 pt-2">
@@ -452,7 +612,7 @@ export default function R(){
 
             <p className="text-gray-600 text-sm mb-4">
               Need a meal fast but dont want to compromise on taste?
-              This blog presents easy recipes for both veg and non-veg options...
+
             </p>
 
             <div className="flex items-center justify-between text-sm text-gray-500 pt">
@@ -478,8 +638,8 @@ export default function R(){
             </h3>
 
             <p className="text-gray-600 text-sm mb-4 ">
-              Planning an event? This blog is your go-to for stress-free catering,
-              mouthwatering recipes, and tips to impress  guests...
+              Planning an event? This blog is your go-to for stress-free catering
+       
             </p>
 
             <div className="flex items-center justify-between text-sm text-gray-500 pt-2">

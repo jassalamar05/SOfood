@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export default function Head(){
     return(
         <>
+        
         {/* <!-- TOP INFO BAR --> */}
 <div className="w-full bg-orange-600 text-white text-sm py-2">
   <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -64,8 +65,11 @@ export default function Head(){
 {/* 
     <!-- Navigation Links --> */}
     <ul className="hidden md:flex items-center gap-10 text-gray-800 font-medium">
+
       <Link to={"/"}className="hover:text-orange-600 cursor-pointer ">Home</Link>
+
        <Link to={"/menu"} className="hover:text-orange-600 cursor-pointer">Menu</Link>
+      
 
       {/* <!-- Information with dropdown arrow --> */}
         <div className="relative inline-block group">
