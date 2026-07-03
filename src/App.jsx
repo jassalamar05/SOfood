@@ -11,6 +11,8 @@ import Contact from './assets/Components/Contact'
 import Menu from './assets/Components/Menu'
 import Rav from './assets/Components/Ruchie'
 import Reac from './assets/Components/Reac.'
+import H from './Home'
+import Fil from './assets/Components/Fil'
 
 function App() {
 
@@ -19,6 +21,9 @@ function App() {
     {/* <Ruch3/> */}
     {/* <R/> */}
     {/* <Reac/> */}
+    {/* <H/> */}
+    {/* <Fil/> */}
+
 
    <BrowserRouter>
    <Routes>
@@ -33,7 +38,7 @@ function App() {
     <Route path='/menu' element={<Menu/>} ></Route>
     </Route>
    </Routes>
-   </BrowserRouter>
+   </BrowserRouter>  
 
 
     </>
