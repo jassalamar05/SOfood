@@ -41,13 +41,13 @@ function App() {
    
     <Route index element={<Rav />} />
     <Route path='/' element={<AdminMaster/>} >
-    {/* <Route path='about' element={<AboutUs/>} ></Route>
+  <Route path='about' element={<AboutUs/>} ></Route>
     <Route path='reserve' element={<Reservations/>} ></Route>
     <Route path='blogs' element={<Blogs/>} ></Route>
      <Route path='chef' element={<Chefs/>} ></Route>
      <Route path='gallery' element={<Gallerys/>} ></Route>
     <Route path='contact' element={<Contact/>} ></Route>
-    <Route path='menu' element={<Menu/>} ></Route>  */}
+    <Route path='menu' element={<Menu/>} ></Route> 
     <Route path='add' element={<Add/>}></Route>
      <Route path='edit' element={<Edits/>}></Route>
      <Route path='up' element={<Update/>}></Route>
