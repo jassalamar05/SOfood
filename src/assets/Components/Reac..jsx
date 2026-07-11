@@ -65,7 +65,7 @@ const prev=()=>{
      <div className="flex justify-center mt-5">
      <div className="bg-orange-500 h-1 w-8"></div>
     </div>
-        <div className="text-center mt-2">OUR TESTIMONIAL</div>
+        <div className="text-center mt-2">OUR TESTIMONIAL===</div>
 
         <p className="text-5xl font-bold text-center mt-6">Exploring <span className="text-orange-500"> Ruchi's</span> Kitchen Treasures</p>
 
