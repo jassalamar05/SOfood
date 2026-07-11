@@ -97,7 +97,7 @@ const prev=()=>{
         </div>
 
     <div className="flex items-center justify-center mt-10 gap-5 mb-10 ">
-        <button onClick={prev}  className="border-orange-500 border-2 h-4 w-4 rounded-full"></button>
+        <button onClick={prev}  className="border-orange-500 border-2 h-4 w-4 rounded-full">qwe</button>
         <button className="bg-black border-2 h-4 w-4 rounded"></button>
         <button onClick={next} className="border-orange-500 border-2 h-4 w-4 rounded-full "></button>  
     </div>
