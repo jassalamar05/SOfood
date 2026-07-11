@@ -63,7 +63,7 @@ export default function AboutUs(){
 
                            <div className="flex items-center justify-between ml-5 mt-5 text-orange-500 font-semibold">
                             <div className="">Snacks</div>
-                            <div className="">Beverages</div>
+                            <div className="">Beverages---</div>
                             <div className="">Main Dishes</div>
                         </div>
                   </div>
